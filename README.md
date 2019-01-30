@@ -17,8 +17,9 @@ In `it.esempio.due.Cylinder` quindi aggiungiamo il metodo `getArea()`:
       return 2 * Math.PI * getRadius() * height + 2 * super.getArea();
    }
    
-```
-
+``` 
+Si vede che è stato necessario utilizzare `super.getArea()` per ottenere l'area della base del cerchio, utilizzando la versione del metodo `getArea()` del `Circle`.
+  
 Da notare che è necessaria anche la modifica di  `getVolume()` in `it.esempio.due.Cylinder` con l'utilizzo di `super.getArea()` per richiamare il `getArea()` di `Circle`:
 
 ```java
