@@ -2,7 +2,7 @@
 
 ![OOP_CircleCylinder](./OOP_CircleCylinder.png)  
 
-La classe `it.esempio.uno.Cylinder` utilizza il metodo getArea() ereditato da `Circle` che calcola l'area del cerchio della base.
+La classe `it.esempio.uno.Cylinder` utilizza il metodo `getArea()` ereditato da `Circle` che calcola l'area del cerchio (la base del cilindro).
 
 Vogliamo che l'area del `Cylinder` dia invece la superficie del cilindro: quindi 2 volte l'area delle basi + l'area della fascia laterale.
 
