@@ -2,11 +2,13 @@
 
 ![OOP_CircleCylinder](./OOP_CircleCylinder.png)  
 
-La classe `it.esempio.due.Cylinder` fa l'override del metodo `getArea()` rispetto alla versione ereditatta dalla classe `Circle`.
+La classe `it.esempio.uno.Cylinder` utilizza il metodo getArea() ereditato da `Circle` che calcola l'area del cerchio della base.
 
-La `getArea()` di `Circle` calcola l'area del cilindo `raggio * raggio * PIGRECO` mentre vogliamo che l'area del `Cylinder` sia la superficie del cilindro: quindi 2 volte l'area delle basi + l'area della fascia laterale. 
+Vogliamo che l'area del `Cylinder` dia invece la superficie del cilindro: quindi 2 volte l'area delle basi + l'area della fascia laterale.
 
-In `it.esempio.due.Cylinder` quindi aggiungiamo il metodo:
+Sotto il package `it.esempio.due` abbiamo la nuova versione della sottoclasse `Cylinder` con l'override del metodo `getArea()` rispetto alla versione ereditatta dalla classe `Circle`.
+
+In `it.esempio.due.Cylinder` quindi aggiungiamo il metodo `getArea()`:
 
 ```java
 
@@ -17,7 +19,7 @@ In `it.esempio.due.Cylinder` quindi aggiungiamo il metodo:
    
 ```
 
-Da notare che è necessaria anche la modifica di  `getVolume()` in `it.esempio.due.Cylinder` con l'utilizzo di `super.getArea()` per richiamare il `getArea()` di `Cylinder`:
+Da notare che è necessaria anche la modifica di  `getVolume()` in `it.esempio.due.Cylinder` con l'utilizzo di `super.getArea()` per richiamare il `getArea()` di `Circle`:
 
 ```java
    // Need to change the getVolume() as well
