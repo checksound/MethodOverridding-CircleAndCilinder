@@ -1,5 +1,6 @@
 # Overridding dei metodi - esempio Circle a Cylinder
 
+![OOP_CircleCylinder](./OOP_CircleCylinder.png)
 La classe `it.esempio.due.Cylinder` fa l'override del metodo `getArea()` rispetto alla versione ereditatta dalla classe `Circle`.
 
 La `getArea()` di `Circle` calcola l'area del cilindo `raggio * raggio * PIGRECO` mentre vogliamo che l'area del Cylinder sia la superficie del cilindro: quindi 2 volte l'area delle basi + l'area della fascia laterale. 
